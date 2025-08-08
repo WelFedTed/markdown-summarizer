@@ -32,9 +32,13 @@ func main() {
 			for range maxHeadingLevel {
 				if word == currentHeadingLevel {
 					fmt.Println(string(line))
+					// if currentlevel = # assign new child slice to summaries[]
+					// save line to summaries[newSlice]
 				}
 				currentHeadingLevel = currentHeadingLevel + "#"
 			}
 		}
+		// build new .md files in .\temp\summaries\
+		// save one .md file per element in summaries
 	}
 }
